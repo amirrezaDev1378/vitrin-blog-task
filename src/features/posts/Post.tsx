@@ -60,10 +60,16 @@ function Post(id) {
                 </Head>
                 <Stack mt={10} direction={"column"} spacing={5} justifyContent={"center"} alignItems={"center"}>
 
-                    <Link href={"/"} >
-                        <Image style={{
-                            cursor:"pointer"
-                        }} src={vitrinLogo} priority loading={"eager"} />
+                    <Link href={"/"}>
+                        <Image
+                            style={{
+                                cursor: "pointer"
+                            }}
+                            src={vitrinLogo}
+                            priority
+                            loading={"eager"}
+                            alt={"vitrin"}
+                        />
                     </Link>
 
                     <Typography className={styles.header} variant={"h1"}>{data.title}</Typography>
