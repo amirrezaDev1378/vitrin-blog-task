@@ -1,7 +1,6 @@
 import {createAsyncThunk, createSlice, PayloadAction} from '@reduxjs/toolkit'
 
 import type {AppState, AppThunk} from '../../app/store'
-import {fetchCount} from './counterAPI'
 import {useGetPostsById} from "../../app/hooks";
 
 export interface PostsStates {
@@ -25,7 +24,7 @@ export const getPostData = createAsyncThunk(
     async (id: { id: number }) => {
         const response = await useGetPostsById(id);
         // The value we return becomes the `fulfilled` action payload
-        return JSON.stringify(response.data);
+        return JSON.stringify({resData : response.data , status:response.status});
     }
 )
 

@@ -10,7 +10,12 @@ const defaultTheme = createTheme({
             fontWeight:"100"
         },
         h3:{
-            fontWeight:"150"
+            fontWeight:"150",
+            fontSize:"1.2rem"
+        },
+        h1:{
+            fontWeight:"200",
+            fontSize:"2rem"
         }
 
     },
