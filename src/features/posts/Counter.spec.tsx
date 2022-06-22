@@ -10,7 +10,7 @@ jest.mock('./counterAPI', () => ({
 }))
 
 import { makeStore } from '../../app/store'
-import Counter from './Counter'
+import Post from './Counter'
 
 describe('<Counter />', () => {
   it('renders the component', () => {
@@ -18,7 +18,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
@@ -30,7 +30,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
@@ -44,7 +44,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
@@ -58,7 +58,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
@@ -73,7 +73,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
@@ -88,7 +88,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Post />
       </Provider>
     )
 
